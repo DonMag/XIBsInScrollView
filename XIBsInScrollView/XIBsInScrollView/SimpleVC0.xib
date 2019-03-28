@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleVC0" customModule="XIBsInScrollView" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="902"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients - VC0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HxM-r9-oEa">
+                    <rect key="frame" x="8" y="8" width="284" height="40"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="n7P-cy-0hK"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eZy-Da-cUB">
+                    <rect key="frame" x="8" y="388" width="284" height="80"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="BUi-bx-qng"/>
+                    </constraints>
+                    <string key="text">This Label has a Height of 80
+and is constrained 340 to the
+Top and Bottom labels</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom Label - VC0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hi8-Rz-51k">
+                    <rect key="frame" x="8" y="808" width="284" height="40"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ppY-Rb-yod"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eZy-Da-cUB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="03n-wa-AiF"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Hi8-Rz-51k" secondAttribute="bottom" constant="8" id="Dp1-F9-Lhu"/>
+                <constraint firstAttribute="trailing" secondItem="HxM-r9-oEa" secondAttribute="trailing" constant="8" id="I24-0E-9t3"/>
+                <constraint firstItem="eZy-Da-cUB" firstAttribute="top" secondItem="HxM-r9-oEa" secondAttribute="bottom" constant="340" id="O6V-aK-LMr"/>
+                <constraint firstItem="Hi8-Rz-51k" firstAttribute="top" secondItem="eZy-Da-cUB" secondAttribute="bottom" constant="340" id="ZBJ-Mn-q4D"/>
+                <constraint firstItem="Hi8-Rz-51k" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="baF-dZ-men"/>
+                <constraint firstItem="HxM-r9-oEa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="o1d-UP-UBF"/>
+                <constraint firstItem="HxM-r9-oEa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="vbz-4K-eam"/>
+                <constraint firstAttribute="trailing" secondItem="Hi8-Rz-51k" secondAttribute="trailing" constant="8" id="vo2-qf-ext"/>
+                <constraint firstAttribute="trailing" secondItem="eZy-Da-cUB" secondAttribute="trailing" constant="8" id="xhP-0W-24j"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="52.799999999999997" y="-149.32533733133434"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SimpleVC1" customModule="XIBsInScrollView" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="240" height="614"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Steps - VC1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fJ0-SI-8cW">
+                    <rect key="frame" x="8" y="8" width="224" height="40"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="VTu-Lj-Uci"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bottom Label - VC1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YTS-au-FCv">
+                    <rect key="frame" x="8" y="528" width="224" height="40"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="0LU-dg-Fvn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mai-oL-OCJ">
+                    <rect key="frame" x="8" y="248" width="224" height="80"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.94117647059999998" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="zLZ-XY-C6K"/>
+                    </constraints>
+                    <string key="text">This Label has a Height of 80
+and is constrained 200 to the
+Top and Bottom labels</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Mai-oL-OCJ" firstAttribute="top" secondItem="fJ0-SI-8cW" secondAttribute="bottom" constant="200" id="1CN-rX-iFq"/>
+                <constraint firstAttribute="trailing" secondItem="fJ0-SI-8cW" secondAttribute="trailing" constant="8" id="7Fb-I5-FDp"/>
+                <constraint firstItem="fJ0-SI-8cW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="8" id="9tT-f8-uoY"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="YTS-au-FCv" secondAttribute="bottom" constant="8" id="Hp8-m8-j0P"/>
+                <constraint firstItem="fJ0-SI-8cW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="JDb-nq-B9U"/>
+                <constraint firstItem="YTS-au-FCv" firstAttribute="top" secondItem="Mai-oL-OCJ" secondAttribute="bottom" constant="200" id="agT-DO-LDl"/>
+                <constraint firstAttribute="trailing" secondItem="Mai-oL-OCJ" secondAttribute="trailing" constant="8" id="dCg-lN-1p7"/>
+                <constraint firstItem="Mai-oL-OCJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="dDB-pF-YAC"/>
+                <constraint firstItem="YTS-au-FCv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="eN2-AP-knU"/>
+                <constraint firstAttribute="trailing" secondItem="YTS-au-FCv" secondAttribute="trailing" constant="8" id="xsO-EI-qFy"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="164.80000000000001" y="-176.31184407796104"/>
+        </view>
+    </objects>
+</document>

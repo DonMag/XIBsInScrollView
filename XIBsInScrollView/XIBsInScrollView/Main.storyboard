@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nmF-sR-hey">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qt2-XU-9Gl">
+            <objects>
+                <viewController id="nmF-sR-hey" customClass="ViewController" customModule="XIBsInScrollView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LYd-a1-gVL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bQC-ve-u5d">
+                                <rect key="frame" x="8" y="28" width="359" height="631"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4TD-QA-xpA">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="191.5"/>
+                                        <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="4TD-QA-xpA" secondAttribute="height" multiplier="15:8" id="Sa1-d1-ril"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kNF-KT-fEv">
+                                        <rect key="frame" x="0.0" y="191.5" width="359" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="S4o-UN-tco"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0Ia-nS-xbE">
+                                        <rect key="frame" x="8" y="227.5" width="343" height="29"/>
+                                        <segments>
+                                            <segment title="Ingredients"/>
+                                            <segment title="Steps"/>
+                                            <segment title="Video"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="tabselected:" destination="nmF-sR-hey" eventType="valueChanged" id="FDo-iP-Xp8"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="fmE-v4-WD5">
+                                        <rect key="frame" x="8" y="263.5" width="343" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="250" constant="10" id="T5f-vi-Dr3"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="kNF-KT-fEv" firstAttribute="top" secondItem="4TD-QA-xpA" secondAttribute="bottom" id="1lS-aH-xnv"/>
+                                    <constraint firstItem="4TD-QA-xpA" firstAttribute="leading" secondItem="bQC-ve-u5d" secondAttribute="leading" id="97l-IL-lX7"/>
+                                    <constraint firstItem="4TD-QA-xpA" firstAttribute="width" secondItem="bQC-ve-u5d" secondAttribute="width" id="FKh-MI-gxT"/>
+                                    <constraint firstItem="fmE-v4-WD5" firstAttribute="leading" secondItem="bQC-ve-u5d" secondAttribute="leading" constant="8" id="JcP-PZ-pRe"/>
+                                    <constraint firstItem="kNF-KT-fEv" firstAttribute="leading" secondItem="bQC-ve-u5d" secondAttribute="leading" id="WGU-Ip-bJs"/>
+                                    <constraint firstItem="4TD-QA-xpA" firstAttribute="top" secondItem="bQC-ve-u5d" secondAttribute="top" id="WUN-f9-UTK"/>
+                                    <constraint firstItem="fmE-v4-WD5" firstAttribute="top" secondItem="0Ia-nS-xbE" secondAttribute="bottom" constant="8" id="Y9L-Go-MuD"/>
+                                    <constraint firstItem="0Ia-nS-xbE" firstAttribute="top" secondItem="kNF-KT-fEv" secondAttribute="bottom" id="bZu-ZR-AMs"/>
+                                    <constraint firstItem="0Ia-nS-xbE" firstAttribute="leading" secondItem="bQC-ve-u5d" secondAttribute="leading" constant="8" id="dTO-4K-bmm"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Ia-nS-xbE" secondAttribute="trailing" constant="8" id="e8P-fC-ayT"/>
+                                    <constraint firstAttribute="bottom" secondItem="fmE-v4-WD5" secondAttribute="bottom" id="ggq-Cj-0Yp"/>
+                                    <constraint firstAttribute="trailing" secondItem="kNF-KT-fEv" secondAttribute="trailing" id="hcG-RE-dIu"/>
+                                    <constraint firstAttribute="trailing" secondItem="fmE-v4-WD5" secondAttribute="trailing" constant="8" id="vhh-yS-sZG"/>
+                                    <constraint firstAttribute="trailing" secondItem="4TD-QA-xpA" secondAttribute="trailing" id="x2I-6I-KUd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bQC-ve-u5d" firstAttribute="top" secondItem="3qu-sy-USd" secondAttribute="top" constant="8" id="HSK-7Y-Kfc"/>
+                            <constraint firstItem="3qu-sy-USd" firstAttribute="trailing" secondItem="bQC-ve-u5d" secondAttribute="trailing" constant="8" id="M9U-38-xFx"/>
+                            <constraint firstItem="3qu-sy-USd" firstAttribute="bottom" secondItem="bQC-ve-u5d" secondAttribute="bottom" constant="8" id="W8f-VV-eBI"/>
+                            <constraint firstItem="bQC-ve-u5d" firstAttribute="leading" secondItem="3qu-sy-USd" secondAttribute="leading" constant="8" id="lsT-ih-YOe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3qu-sy-USd"/>
+                    </view>
+                    <connections>
+                        <outlet property="theStackView" destination="fmE-v4-WD5" id="W1k-xC-gRb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ABv-39-69m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55.200000000000003" y="279.31034482758622"/>
+        </scene>
+    </scenes>
+</document>
